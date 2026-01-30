@@ -19,8 +19,8 @@ struct circular_buffer_t {
 
 void cb_init(struct circular_buffer_t *cb);
 
-void cb_push(struct circular_buffer_t *cb, uint_t* x);
+int cb_push(struct circular_buffer_t *cb, uint_t* x);
 
-int32_t cb_pop(struct circular_buffer_t *cb);
+int cb_pop(struct circular_buffer_t *cb);
 
 #endif /* INC_CIRCULAR_BUFFER_H_ */
