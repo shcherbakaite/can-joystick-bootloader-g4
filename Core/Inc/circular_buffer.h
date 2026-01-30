@@ -8,8 +8,8 @@
 #ifndef INC_CIRCULAR_BUFFER_H_
 #define INC_CIRCULAR_BUFFER_H_
 
-#define CIRCULAR_BUFFER_SIZE 64
-#define CIRCULAR_BUFFER_SIZE_LOG_2 6
+#define CIRCULAR_BUFFER_SIZE 2048
+#define CIRCULAR_BUFFER_SIZE_LOG_2 11
 
 struct circular_buffer_t {
     uint16_t data[CIRCULAR_BUFFER_SIZE];
