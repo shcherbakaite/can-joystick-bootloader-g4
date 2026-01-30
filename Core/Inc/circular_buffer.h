@@ -12,9 +12,9 @@
 #define CIRCULAR_BUFFER_SIZE_LOG_2 11
 
 struct circular_buffer_t {
-    uint16_t data[CIRCULAR_BUFFER_SIZE];
+    uint32_t data[CIRCULAR_BUFFER_SIZE];
     uint32_t head;
-    uint32_t len;
+    uint32_t tail;
 };
 
 void cb_init(struct circular_buffer_t *cb);
